@@ -16,7 +16,7 @@ import {
 import { BrandMark } from '../components/BrandLogo'
 import { BrandModal } from '../components/BrandModal'
 import { Button } from '../components/Button'
-import { F1Car } from '../components/F1Car'
+import { HeroCar } from '../components/HeroCar'
 import { AnimatedNumber } from '../components/AnimatedNumber'
 import { ProgressRing } from '../components/ProgressRing'
 import { brands } from '../data/brands'
@@ -157,7 +157,7 @@ export function HomePage() {
 
         <motion.div variants={item} className={styles.heroVisual}>
           <div className={styles.visualGlow} aria-hidden="true" />
-          <F1Car />
+          <HeroCar />
 
           <div className={`${styles.brandChip} ${styles.chipOne}`} aria-hidden="true">
             <BrandMark logo="ferrari" />
@@ -177,7 +177,7 @@ export function HomePage() {
           </div>
 
           <div className={styles.heroTag} aria-hidden="true">
-            <span>W17</span>
+            <span>GT</span>
             <span>2026</span>
           </div>
         </motion.div>
