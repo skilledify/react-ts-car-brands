@@ -107,8 +107,8 @@ export function HomePage() {
           </motion.h1>
 
           <motion.p variants={item} className={styles.lead}>
-            26 легендарных марок из 10 стран. Учись, играй и собирай звёзды вместе с командой
-            TURBO GARAGE.
+            {brands.length} легендарных марок из {countries.length} стран. Учись, играй и собирай
+            звёзды вместе с командой TURBO GARAGE.
           </motion.p>
 
           <motion.div variants={item} className={styles.actions}>
@@ -136,7 +136,7 @@ export function HomePage() {
               <Star size={14} fill="currentColor" aria-hidden="true" /> +5 звёзд за бренд
             </span>
             <span>
-              <MapPin size={14} aria-hidden="true" /> 10 стран
+              <MapPin size={14} aria-hidden="true" /> {countries.length} стран
             </span>
             <span>
               <Sparkles size={14} aria-hidden="true" /> 4 режима

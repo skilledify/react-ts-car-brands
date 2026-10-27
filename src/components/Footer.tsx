@@ -18,7 +18,16 @@ export function Footer() {
         <p className={styles.legal}>
           Логотипы принадлежат их правообладателям и используются в некоммерческих
           образовательных целях. Оформление вдохновлено ливреей Mercedes-AMG Petronas Formula One
-          Team.
+          Team. Фото Mercedes-AMG C204 DTM:{' '}
+          <a
+            className={styles.creditLink}
+            href="https://commons.wikimedia.org/wiki/File:AMG_Mercedes-Benz_C204_(DTM).jpg"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Stefan Krause, CC BY-SA 3.0
+          </a>
+          .
         </p>
 
         <p className={styles.made}>

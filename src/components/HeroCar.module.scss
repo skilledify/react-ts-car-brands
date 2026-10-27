@@ -16,22 +16,83 @@
   width: 100%;
   padding: 0;
   cursor: pointer;
-  filter: drop-shadow(0 24px 30px rgba(0, 0, 0, 0.35));
   @include focus-ring;
 }
 
-.car {
+.carPhotoWrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid rgba(46, 242, 214, 0.2);
+  border-radius: 26px;
+  background: #05090b;
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.56),
+    0 0 48px rgba(0, 210, 190, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 0 80px rgba(5, 9, 11, 0.35);
+}
+
+.carPhoto {
+  display: block;
   width: 100%;
   height: auto;
-  overflow: visible;
+  user-select: none;
+  -webkit-user-drag: none;
+  filter: contrast(1.06) saturate(0.94) brightness(1.01);
+  transform: scale(1.02);
+  transform-origin: 50% 55%;
 }
 
-.rim {
-  animation: spin 1.7s linear infinite;
+.photoVignette {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 9, 11, 0.78) 0%,
+      rgba(5, 9, 11, 0.28) 13%,
+      transparent 28%,
+      transparent 74%,
+      rgba(5, 9, 11, 0.72) 100%
+    ),
+    radial-gradient(ellipse at 50% 52%, transparent 48%, rgba(5, 9, 11, 0.28) 100%),
+    radial-gradient(ellipse at 100% 0%, rgba(5, 9, 11, 0.9) 0%, rgba(5, 9, 11, 0.55) 22%, transparent 48%);
 }
 
-.rimFront {
-  animation: spin 1.25s linear infinite;
+.photoBadge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 10px;
+  border: 1px solid rgba(46, 242, 214, 0.24);
+  border-radius: 999px;
+  background: rgba(5, 9, 11, 0.55);
+  backdrop-filter: blur(10px);
+  color: var(--chalk);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  i {
+    width: 6px;
+    height: 6px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: var(--teal-bright);
+    box-shadow: 0 0 10px rgba(46, 242, 214, 0.85);
+  }
 }
 
 .ring,

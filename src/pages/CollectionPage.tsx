@@ -49,6 +49,7 @@ export function CollectionPage() {
   const { progress, learnedSet, learnedCount, progressPercent, resetProgress } = useApp()
   const level = levelFor(progressPercent)
   const remaining = brands.length - learnedCount
+  const halfCount = Math.ceil(brands.length / 2)
 
   const badges: Badge[] = [
     {
@@ -74,17 +75,17 @@ export function CollectionPage() {
     {
       id: 'half',
       title: 'Половина пути',
-      description: 'Изучи 13 автомобильных марок',
+      description: `Изучи ${halfCount} автомобильных марок`,
       icon: Gauge,
       accent: '#6fa8ff',
-      unlocked: learnedCount >= 13,
-      progress: `${Math.min(learnedCount, 13)}/13`,
-      percent: Math.min(100, (learnedCount / 13) * 100),
+      unlocked: learnedCount >= halfCount,
+      progress: `${Math.min(learnedCount, halfCount)}/${halfCount}`,
+      percent: Math.min(100, (learnedCount / halfCount) * 100),
     },
     {
       id: 'all',
       title: 'Полная коллекция',
-      description: 'Открой все 26 брендов',
+      description: `Открой все ${brands.length} брендов`,
       icon: Trophy,
       accent: '#ffb020',
       unlocked: learnedCount >= brands.length,
@@ -344,7 +345,7 @@ export function CollectionPage() {
           <p>
             {remaining > 0
               ? 'Каждый новый бренд — это 5 звёзд и шаг к званию легенды гаража.'
-              : 'Все 26 брендов в гараже. Теперь можно блеснуть знаниями в викторине!'}
+              : `Все ${brands.length} брендов в гараже. Теперь можно блеснуть знаниями в викторине!`}
           </p>
         </div>
         <div className={styles.ctaActions}>

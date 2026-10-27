@@ -1,13 +1,13 @@
 <div align="center">
 
-<img src="public/favicon.svg" width="96" alt="TURBO GARAGE" />
+<img src="public/favicon.png" width="96" alt="TURBO GARAGE" />
 
 # TURBO GARAGE · ТУРБО ГАРАЖ
 
 **Автоакадемия для юных чемпионов 5+**
 
 Учись узнавать автомобильные бренды, собирай звёзды, проходи викторины и ставь рекорды пит-стопа.
-26 легендарных марок из 10 стран — в одном ярком гоночном гараже.
+47 легендарных марок из 10 стран — в одном ярком гоночном гараже.
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=0B0B0B)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -46,7 +46,7 @@
 
 **TURBO GARAGE** — русскоязычная браузерная игра для детей от 5 лет, которая знакомит с логотипами автомобильных брендов в формате гоночной академии. Здесь нет скучных тестов: ребёнок открывает карточки, слушает названия, отвечает на вопросы, ищет пары на время и постепенно собирает коллекцию.
 
-Визуальный стиль вдохновлён ливреей **Mercedes-AMG Petronas Formula One 2026**: бирюзовый Petronas, глубокий карбон, серебро, неоновые акценты и гоночная графика.
+Визуальный стиль вдохновлён ливреей **Mercedes-AMG Petronas Formula One 2026**: бирюзовый Petronas, глубокий карбон, серебро, неоновые акценты и гоночная графика. В Hero-блоке — реальный **Mercedes-AMG C204 DTM**, а логотип и favicon — его квадратные фрагменты с фирменной решёткой и трёхлучевой звездой.
 
 <div align="center">
 
@@ -56,11 +56,20 @@
 </div>
 
 <details>
-<summary><strong>🏁 Показать все 26 брендов</strong></summary>
+<summary><strong>🏁 Показать все 47 брендов</strong></summary>
 
 <br />
 
-Mercedes-AMG · BMW · Audi · Porsche · Volkswagen · Ferrari · Lamborghini · Fiat · Ford · Tesla · Jeep · Toyota · Honda · Nissan · Mazda · Renault · Peugeot · Bugatti · McLaren · MINI · Volvo · Koenigsegg · Hyundai · Kia · Škoda · SEAT
+**🇩🇪 Германия:** Mercedes-AMG · BMW · Audi · Porsche · Volkswagen · Opel · Smart<br />
+**🇮🇹 Италия:** Ferrari · Lamborghini · Fiat · Alfa Romeo · Maserati<br />
+**🇺🇸 США:** Ford · Tesla · Jeep · Chevrolet · Cadillac · Chrysler<br />
+**🇯🇵 Япония:** Toyota · Honda · Nissan · Mazda · Subaru · Mitsubishi<br />
+**🇫🇷 Франция:** Renault · Peugeot · Bugatti · Citroën · DS Automobiles<br />
+**🇬🇧 Великобритания:** McLaren · MINI · Aston Martin · Bentley<br />
+**🇸🇪 Швеция:** Volvo · Koenigsegg · Polestar · Scania<br />
+**🇰🇷 Южная Корея:** Hyundai · Kia · Genesis · Daewoo<br />
+**🇨🇿 Чехия:** Škoda · Tatra · Praga<br />
+**🇪🇸 Испания:** SEAT · CUPRA · Hispano-Suiza
 
 </details>
 
@@ -87,7 +96,7 @@ Mercedes-AMG · BMW · Audi · Porsche · Volkswagen · Ferrari · Lamborghini �
 
 | Режим | Механика | Награда |
 |:---|:---|:---:|
-| 🏠 **Гараж** | 26 карточек брендов, фильтр по стране, логотип, факт и озвучивание названия | ⭐ +5 звёзд |
+| 🏠 **Гараж** | 47 карточек брендов, фильтр по стране, логотип, факт и озвучивание названия | ⭐ +5 звёзд |
 | ❓ **Викторина** | 10 вопросов «чей это логотип?», 4 варианта, подсказка страны и объяснение ответа | ⭐ +2 за ответ<br />⭐ +10 за 10/10 |
 | 🏁 **Пит-стоп** | 6 пар «логотип — название», таймер, ходы и лучший круг | ⭐ +20 за заезд |
 | 🏆 **Коллекция** | Уровни, 8 достижений, прогресс по странам, звёзды и рекорды | 🏅 Бейджи |
@@ -95,7 +104,8 @@ Mercedes-AMG · BMW · Audi · Porsche · Volkswagen · Ferrari · Lamborghini �
 ### 🎨 Дизайн и анимации
 
 - Гоночная палитра Mercedes-AMG Petronas: `#00d2be`, `#2ef2d6`, карбон и серебро.
-- Кастомный SVG-спорткар в ливрее Petronas — обычная дорожная машина, которая «заводится» по клику.
+- Реалистичный Mercedes-AMG C204 DTM в Hero-блоке: снимок с фирменным баннером TURBO и табличкой 5+, который «заводится» по клику.
+- Логотип и favicon — фрагменты того же Hero-снимка: решётка, трёхлучевая звезда и табличка 5+.
 - Плавные переходы страниц и появление карточек на `framer-motion`.
 - Конфетти, звёздные вспышки и анимация прогресса.
 - Бесконечно прокручивающийся тикер стран, кольца прогресса и floating-чипы брендов.
@@ -186,7 +196,7 @@ npm run preview
 
 | Путь | Страница | Описание |
 |:---|:---|:---|
-| `/` | 🏠 Главная | Hero, спорткар, статистика, выбор режима и бренд дня |
+| `/` | 🏠 Главная | Hero, Mercedes-AMG C204 DTM, статистика, выбор режима и бренд дня |
 | `/garage` | 🚗 Гараж | Каталог брендов с фильтром по стране и модальными карточками |
 | `/quiz` | ❓ Викторина | 10 вопросов с вариантами ответа и подсказками |
 | `/race` | 🏁 Пит-стоп | Игра на память с таймером и результатами |
@@ -205,14 +215,20 @@ npm run preview
 ├── docs/
 │   └── screenshots/            # Скриншоты для README
 ├── public/
-│   └── favicon.svg             # Иконка приложения
+│   ├── favicon.png             # Favicon из Hero-снимка
+│   └── apple-touch-icon.png    # Иконка для iOS
 ├── src/
+│   ├── assets/
+│   │   ├── mercedes-dtm-hero.webp   # Hero-снимок Mercedes-AMG C204 DTM
+│   │   └── mercedes-dtm-logo.webp   # Логотип — фрагмент Hero-снимка
 │   ├── components/             # Header, Footer, BrandCard, BrandModal,
 │   │                           # HeroCar, ProgressRing, Button, Logo...
 │   ├── data/
-│   │   ├── brands.ts           # 26 брендов: факты, страны, акценты
+│   │   ├── brands.ts           # 47 брендов: факты, страны, акценты
 │   │   ├── countries.ts        # 10 стран с флагами
-│   │   └── brandLogos.ts       # SVG-пути логотипов
+│   │   ├── brandLogos.ts       # Объединённый реестр логотипов
+│   │   ├── automotiveBrandLogoPaths.ts  # SVG-пути автомобильных марок
+│   │   └── customBrandLogos.ts # Дополнительные нарисованные логотипы
 │   ├── hooks/
 │   │   └── useBodyLock.ts      # Блокировка скролла при открытой модалке
 │   ├── lib/
@@ -275,7 +291,8 @@ npm run preview
 ### Источники логотипов
 
 - Большинство логотипов взято из **Simple Icons** (CC0) и встроено как SVG-пути.
-- Логотип **Mercedes-AMG** нарисован отдельно в стиле проекта.
+- Логотип **Mercedes-AMG** в каталоге брендов нарисован отдельно в стиле проекта.
+- Логотип и favicon **TURBO GARAGE** — фрагменты Hero-фотографии Mercedes-AMG C204 DTM.
 - Все товарные знаки принадлежат их владельцам. Проект носит образовательный и развлекательный характер.
 
 ---
@@ -357,6 +374,7 @@ https://<username>.github.io/react-ts-car-brands/
 - [Simple Icons](https://simpleicons.org/) — SVG-пути логотипов.
 - [Fontsource](https://fontsource.org/) — локальные шрифты Unbounded и Manrope.
 - [Canvas Confetti](https://github.com/catdad/canvas-confetti) — конфетти.
+- [Stefan Krause](https://commons.wikimedia.org/wiki/File:AMG_Mercedes-Benz_C204_(DTM).jpg) — фотография Mercedes-AMG C204 DTM, CC BY-SA 3.0.
 
 ---
 

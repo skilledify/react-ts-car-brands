@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react'
+import { customBrandLogos, type CustomBrandLogo } from '../data/customBrandLogos'
 import { brandLogoPaths, type BrandLogoId } from '../data/brandLogos'
 import type { Brand } from '../types'
 
@@ -31,9 +32,47 @@ export function BrandMark({ logo, className, style }: BrandMarkProps) {
     )
   }
 
+  if (logo in customBrandLogos) {
+    const custom: CustomBrandLogo = customBrandLogos[logo as keyof typeof customBrandLogos]
+
+    return (
+      <svg
+        viewBox={custom.viewBox}
+        className={className}
+        style={style}
+        aria-hidden="true"
+        focusable="false"
+      >
+        {custom.groupTransform ? (
+          <g transform={custom.groupTransform}>
+            {custom.paths.map((path, index) => (
+              <path
+                key={index}
+                d={path.d}
+                fill={path.fill}
+                fillRule={path.fillRule}
+                transform={path.transform}
+              />
+            ))}
+          </g>
+        ) : (
+          custom.paths.map((path, index) => (
+            <path
+              key={index}
+              d={path.d}
+              fill={path.fill}
+              fillRule={path.fillRule}
+              transform={path.transform}
+            />
+          ))
+        )}
+      </svg>
+    )
+  }
+
   return (
     <svg viewBox="0 0 24 24" className={className} style={style} aria-hidden="true" focusable="false">
-      <path d={brandLogoPaths[logo]} fill="currentColor" />
+      <path d={brandLogoPaths[logo as keyof typeof brandLogoPaths]} fill="currentColor" />
     </svg>
   )
 }

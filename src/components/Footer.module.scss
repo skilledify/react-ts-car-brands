@@ -53,6 +53,18 @@
   max-width: 560px;
 }
 
+.creditLink {
+  color: var(--teal-bright);
+  text-decoration: underline;
+  text-decoration-color: rgba(46, 242, 214, 0.35);
+  text-underline-offset: 2px;
+  transition: color 160ms ease;
+
+  &:hover {
+    color: var(--chalk);
+  }
+}
+
 .made {
   display: inline-flex;
   align-items: center;
