@@ -262,10 +262,12 @@
 .tickerTrack {
   display: flex;
   width: max-content;
-  animation: ticker 38s linear infinite;
+  animation: ticker 26s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
 
   @include reduced-motion {
-    animation: none;
+    animation: ticker 26s linear infinite !important;
   }
 }
 
@@ -298,6 +300,10 @@
 }
 
 @keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+
   to {
     transform: translateX(-50%);
   }
