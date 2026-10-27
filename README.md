@@ -158,7 +158,7 @@
 ### Установка
 
 ```bash
-git clone https://github.com/<username>/react-ts-car-brands.git
+git clone https://github.com/skilledify/react-ts-car-brands.git
 cd react-ts-car-brands
 
 nvm use
@@ -324,10 +324,10 @@ gh repo create react-ts-car-brands --public --source=. --remote=origin --push
 4. Сайт будет доступен по адресу:
 
 ```text
-https://<username>.github.io/react-ts-car-brands/
+https://skilledify.github.io/react-ts-car-brands/
 ```
 
-> Если репозиторий называется `<username>.github.io`, базовый путь должен быть `/`. В этом случае измените строку с `VITE_BASE` в workflow.
+> Если репозиторий называется `skilledify.github.io`, базовый путь должен быть `/`. В этом случае измените строку с `VITE_BASE` в workflow.
 
 ### Обновление сайта
 
