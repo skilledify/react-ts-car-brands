@@ -1,42 +1,164 @@
+<div align="center">
+
+<img src="public/favicon.svg" width="96" alt="TURBO GARAGE" />
+
 # TURBO GARAGE · ТУРБО ГАРАЖ
 
-Яркая интерактивная автоакадемия для детей 5+ и всех, кто любит автомобили. Внутри — 26 легендарных брендов из 10 стран, логотипы, интересные факты и четыре игровых режима.
+**Автоакадемия для юных чемпионов 5+**
 
-Оформление вдохновлено ливреей Mercedes-AMG Petronas Formula One 2026: бирюзовый Petronas, карбон, серебро и гоночные акценты.
+Учись узнавать автомобильные бренды, собирай звёзды, проходи викторины и ставь рекорды пит-стопа.
+26 легендарных марок из 10 стран — в одном ярком гоночном гараже.
 
-## Что внутри
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=0B0B0B)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
+[![SCSS](https://img.shields.io/badge/SCSS-Modules-C76494?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
+[![React Router](https://img.shields.io/badge/React_Router-7-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)](https://reactrouter.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-14-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://motion.dev/)
+[![Node](https://img.shields.io/badge/Node.js-22-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+![Kids 5+](https://img.shields.io/badge/Kids-5%2B-FFD166?style=for-the-badge)
 
-- **Гараж** — 26 карточек брендов с фильтром по стране, крупным логотипом и фактом. За изучение бренда начисляются звёзды.
-- **Викторина** — 10 вопросов «чей это логотип?», четыре варианта ответа, подсказка страны и мгновенная обратная связь.
-- **Пит-стоп** — игра на память: найди пары «логотип — название» на время.
-- **Коллекция** — прогресс, звёзды, достижения и статистика по странам.
-- Анимации на `framer-motion`, звуки на Web Audio API, конфетти, сохранение прогресса в `localStorage`.
-- Полностью адаптивная вёрстка: от 320 px до широких мониторов.
-- Локальные шрифты Unbounded и Manrope — приложение работает без обращений к Google Fonts.
+**React Router 7 · декларативный режим · GitHub Pages ready**
 
-## Стек
+</div>
 
-- [Vite](https://vite.dev/) + [React 19](https://react.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- SCSS-модули
-- [React Router 7, декларативный режим](https://reactrouter.com/) (`BrowserRouter`, `Routes`, `NavLink`)
-- `framer-motion`, `lucide-react`, `canvas-confetti`
+---
 
-Логотипы взяты из [Simple Icons](https://simpleicons.org/) (CC0) и встроены в проект как SVG-пути. Логотип Mercedes-AMG нарисован отдельно для проекта. Все товарные знаки принадлежат их владельцам.
+## 🧭 Содержание
 
-## Локальный запуск
+- [О проекте](#-о-проекте)
+- [Скриншоты](#-скриншоты)
+- [Возможности](#-возможности)
+- [Стек](#-стек)
+- [Быстрый старт](#-быстрый-старт)
+- [Скрипты](#-скрипты)
+- [Маршруты](#-маршруты)
+- [Структура проекта](#-структура-проекта)
+- [Данные и бренды](#-данные-и-бренды)
+- [Публикация на GitHub Pages](#-публикация-на-github-pages)
+- [Качество и проверки](#-качество-и-проверки)
+- [Доступность](#-доступность)
+- [Благодарности](#-благодарности)
 
-Нужен Node.js 22 (закреплён в `.nvmrc`).
+---
+
+## 📖 О проекте
+
+**TURBO GARAGE** — русскоязычная браузерная игра для детей от 5 лет, которая знакомит с логотипами автомобильных брендов в формате гоночной академии. Здесь нет скучных тестов: ребёнок открывает карточки, слушает названия, отвечает на вопросы, ищет пары на время и постепенно собирает коллекцию.
+
+Визуальный стиль вдохновлён ливреей **Mercedes-AMG Petronas Formula One 2026**: бирюзовый Petronas, глубокий карбон, серебро, неоновые акценты и гоночная графика.
+
+<div align="center">
+
+🇩🇪 Германия · 🇮🇹 Италия · 🇺🇸 США · 🇯🇵 Япония · 🇫🇷 Франция
+🇬🇧 Великобритания · 🇸🇪 Швеция · 🇰🇷 Южная Корея · 🇨🇿 Чехия · 🇪🇸 Испания
+
+</div>
+
+<details>
+<summary><strong>🏁 Показать все 26 брендов</strong></summary>
+
+<br />
+
+Mercedes-AMG · BMW · Audi · Porsche · Volkswagen · Ferrari · Lamborghini · Fiat · Ford · Tesla · Jeep · Toyota · Honda · Nissan · Mazda · Renault · Peugeot · Bugatti · McLaren · MINI · Volvo · Koenigsegg · Hyundai · Kia · Škoda · SEAT
+
+</details>
+
+> **Для кого:** дети 5+, родители, педагоги и все, кто любит автомобили.<br />
+> **Прогресс:** сохраняется автоматически в `localStorage` браузера.
+
+---
+
+## 📸 Скриншоты
+
+| 🏠 Главная | 🚗 Гараж |
+|:---:|:---:|
+| ![Главная страница TURBO GARAGE](docs/screenshots/home.webp) | ![Гараж автомобильных брендов](docs/screenshots/garage.webp) |
+| **Викторина** | **Пит-стоп** |
+| ![Викторина «Угадай бренд»](docs/screenshots/quiz.webp) | ![Игра «Собери пары»](docs/screenshots/race.webp) |
+| **Коллекция** | **Мобильные экраны** |
+| ![Коллекция трофеев](docs/screenshots/collection.webp) | <img src="docs/screenshots/mobile-home.webp" width="220" alt="Мобильная главная" /> <img src="docs/screenshots/mobile-garage.webp" width="220" alt="Мобильный гараж" /> |
+
+---
+
+## ✨ Возможности
+
+### 🎮 Четыре игровых режима
+
+| Режим | Механика | Награда |
+|:---|:---|:---:|
+| 🏠 **Гараж** | 26 карточек брендов, фильтр по стране, логотип, факт и озвучивание названия | ⭐ +5 звёзд |
+| ❓ **Викторина** | 10 вопросов «чей это логотип?», 4 варианта, подсказка страны и объяснение ответа | ⭐ +2 за ответ<br />⭐ +10 за 10/10 |
+| 🏁 **Пит-стоп** | 6 пар «логотип — название», таймер, ходы и лучший круг | ⭐ +20 за заезд |
+| 🏆 **Коллекция** | Уровни, 8 достижений, прогресс по странам, звёзды и рекорды | 🏅 Бейджи |
+
+### 🎨 Дизайн и анимации
+
+- Гоночная палитра Mercedes-AMG Petronas: `#00d2be`, `#2ef2d6`, карбон и серебро.
+- Кастомный SVG-болид Mercedes-AMG W17, который «заводится» по клику.
+- Плавные переходы страниц и появление карточек на `framer-motion`.
+- Конфетти, звёздные вспышки и анимация прогресса.
+- Анимированный тикер стран, кольца прогресса и floating-чипы брендов.
+- Локальные шрифты **Unbounded** и **Manrope** — без запросов к Google Fonts.
+
+### 🧠 Механики прогресса
+
+- Изучение бренда начисляет звёзды и открывает карточку в коллекции.
+- Викторина запоминает лучший результат и количество попыток.
+- Пит-стоп сохраняет лучший круг и общее число побед.
+- 8 достижений: от «Первого шага» до «Звёздного чемпиона» на 100 звёзд.
+- Отдельная статистика по 10 странам и уровням: Новичок → Легенда гаража.
+
+### 📱 Адаптивность и доступность
+
+- Полностью адаптивная вёрстка от **320 px** до широких мониторов.
+- Мобильная нижняя навигация и горизонтальный скролл фильтров стран.
+- Навигация с клавиатуры, skip-link и видимые focus-ring.
+- Модальные окна закрываются по `Escape`, фокус удерживается внутри.
+- Поддержка `prefers-reduced-motion`.
+- Переключатель звука и синтез речи для названий брендов.
+
+---
+
+## 🛠 Стек
+
+| Слой | Технологии |
+|:---|:---|
+| **UI** | React 19, TypeScript 5.9, SCSS Modules |
+| **Сборка** | Vite 8, Rolldown, Node.js 22 |
+| **Маршрутизация** | React Router 7, декларативный режим (`BrowserRouter`, `Routes`, `NavLink`) |
+| **Анимации** | Framer Motion |
+| **Иконки** | Lucide React |
+| **Эффекты** | Canvas Confetti |
+| **Звук** | Web Audio API + Speech Synthesis API |
+| **Шрифты** | Fontsource: Unbounded, Manrope |
+| **Хранение** | `localStorage` |
+| **Деплой** | GitHub Actions → GitHub Pages |
+
+---
+
+## 🚀 Быстрый старт
+
+### Требования
+
+- **Node.js 22+** — версия закреплена в `.nvmrc`
+- npm 10+
+- современный браузер с поддержкой Web Audio API
+
+### Установка
 
 ```bash
+git clone https://github.com/<username>/react-ts-car-brands.git
+cd react-ts-car-brands
+
 nvm use
 npm install
 npm run dev
 ```
 
-Приложение откроется на `http://localhost:5173`.
+Приложение откроется на **http://localhost:5173**.
 
-### Сборка и проверка production-версии
+### Production-сборка
 
 ```bash
 npm run build
@@ -45,59 +167,205 @@ npm run preview
 
 Готовые файлы появятся в `dist/`.
 
-### Проверка типов
+---
 
-```bash
-npm run typecheck
+## 📜 Скрипты
+
+| Команда | Что делает |
+|:---|:---|
+| `npm run dev` | Запускает Vite dev-сервер с HMR |
+| `npm run build` | Проверяет типы через `tsc -b` и собирает production-версию |
+| `npm run preview` | Локально запускает собранный `dist` |
+| `npm run typecheck` | Проверяет TypeScript без emit |
+
+---
+
+## 🗺 Маршруты
+
+Приложение использует **React Router 7 в декларативном режиме** и `BrowserRouter`. Базовый путь берётся из `import.meta.env.BASE_URL`, поэтому проект работает и в корне домена, и в подпапке GitHub Pages.
+
+| Путь | Страница | Описание |
+|:---|:---|:---|
+| `/` | 🏠 Главная | Hero, болид, статистика, выбор режима и бренд дня |
+| `/garage` | 🚗 Гараж | Каталог брендов с фильтром по стране и модальными карточками |
+| `/quiz` | ❓ Викторина | 10 вопросов с вариантами ответа и подсказками |
+| `/race` | 🏁 Пит-стоп | Игра на память с таймером и результатами |
+| `/collection` | 🏆 Коллекция | Прогресс, достижения, рекорды и статистика |
+| `*` | ↩️ Fallback | Перенаправление на главную |
+
+---
+
+## 🧱 Структура проекта
+
+```text
+.
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # CI/CD: сборка и деплой на GitHub Pages
+├── docs/
+│   └── screenshots/            # Скриншоты для README
+├── public/
+│   └── favicon.svg             # Иконка приложения
+├── src/
+│   ├── components/             # Header, Footer, BrandCard, BrandModal,
+│   │                           # F1Car, ProgressRing, Button, Logo...
+│   ├── data/
+│   │   ├── brands.ts           # 26 брендов: факты, страны, акценты
+│   │   ├── countries.ts        # 10 стран с флагами
+│   │   └── brandLogos.ts       # SVG-пути логотипов
+│   ├── hooks/
+│   │   └── useBodyLock.ts      # Блокировка скролла при открытой модалке
+│   ├── lib/
+│   │   ├── audio.ts            # Web Audio API и синтез речи
+│   │   ├── celebrate.ts        # Конфетти и празднования
+│   │   ├── format.ts           # Форматирование времени
+│   │   └── random.ts           # Перемешивание карточек
+│   ├── pages/
+│   │   ├── HomePage.tsx
+│   │   ├── GaragePage.tsx
+│   │   ├── QuizPage.tsx
+│   │   ├── RacePage.tsx
+│   │   └── CollectionPage.tsx
+│   ├── state/
+│   │   └── AppContext.tsx      # Прогресс, звёзды, рекорды, localStorage
+│   ├── styles/
+│   │   ├── _mixins.scss        # Брейкпоинты, focus-ring, reduced-motion
+│   │   └── global.scss         # Переменные, reset, общие утилиты
+│   ├── App.tsx                 # Маршруты, переходы, layout
+│   ├── main.tsx                # BrowserRouter + basename
+│   ├── types.ts                # Общие TypeScript-типы
+│   └── vite-env.d.ts
+├── .gitignore
+├── .nvmrc
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 ```
 
-## Маршруты
+---
 
-Приложение использует React Router 7 в декларативном режиме и `BrowserRouter`:
+## 🧩 Данные и бренды
 
-- `/` — главная;
-- `/garage` — гараж брендов;
-- `/quiz` — викторина;
-- `/race` — пит-стоп;
-- `/collection` — коллекция;
-- остальные пути перенаправляются на главную.
+Все данные хранятся в обычных TypeScript-массивах — без базы данных и API.
 
-Базовый путь берётся из `import.meta.env.BASE_URL`, поэтому приложение корректно работает и в корне домена, и в подпапке GitHub Pages.
+### Добавить новый бренд
 
-## Публикация на GitHub Pages
+1. Добавьте запись в `src/data/brands.ts`:
 
-В репозитории уже есть workflow `.github/workflows/deploy.yml`. Он собирает проект, подставляет имя репозитория в `VITE_BASE`, копирует `index.html` в `404.html` для поддержки прямых ссылок и публикует `dist` через GitHub Actions.
+```ts
+{
+  id: 'new-brand',
+  name: 'New Brand',
+  nameRu: 'Новый бренд',
+  country: 'germany',
+  since: 2026,
+  logo: 'newbrand',
+  tagline: 'Короткий слоган',
+  fact: 'Интересный факт для ребёнка.',
+  accent: '#00d2be',
+}
+```
 
-1. Создайте репозиторий на GitHub.
-2. Отправьте код в ветку `main`.
-3. В настройках репозитория откройте **Settings → Pages** и выберите **Source: GitHub Actions**.
-4. После успешного workflow сайт будет доступен по адресу `https://<username>.github.io/<repository>/`.
+2. Добавьте SVG-путь логотипа в `src/data/brandLogos.ts` (например, из [Simple Icons](https://simpleicons.org/)).
+3. Если нужна новая страна — добавьте её в `src/data/countries.ts`.
+4. Проверьте, что количество брендов и стран обновилось автоматически: интерфейс считает статистику из массивов.
 
-Если репозиторий называется `<username>.github.io`, измените `VITE_BASE` в workflow на `/`.
+### Источники логотипов
 
-### Первая публикация через GitHub CLI
+- Большинство логотипов взято из **Simple Icons** (CC0) и встроено как SVG-пути.
+- Логотип **Mercedes-AMG** нарисован отдельно в стиле проекта.
+- Все товарные знаки принадлежат их владельцам. Проект носит образовательный и развлекательный характер.
+
+---
+
+## 📦 Публикация на GitHub Pages
+
+В репозитории уже настроен workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+
+### Что делает CI
+
+1. Устанавливает Node.js 22 и зависимости через `npm ci`.
+2. Вычисляет базовый путь из имени репозитория и передаёт его в `VITE_BASE`.
+3. Собирает приложение через `npm run build`.
+4. Копирует `dist/index.html` в `dist/404.html` — это включает прямые ссылки вида `/garage`, `/quiz` и `/collection`.
+5. Добавляет `.nojekyll` и публикует `dist` через GitHub Pages.
+
+### Первая публикация
 
 ```bash
 gh auth login
 gh repo create react-ts-car-brands --public --source=. --remote=origin --push
 ```
 
-Затем включите GitHub Actions как источник Pages (шаг 3 выше). Дальнейшие пуши в `main` будут деплоить сайт автоматически.
+Затем:
 
-## Структура
+1. Откройте **Settings → Pages**.
+2. Выберите **Source: GitHub Actions**.
+3. Дождитесь завершения workflow во вкладке **Actions**.
+4. Сайт будет доступен по адресу:
 
 ```text
-src/
-  components/   общие UI-компоненты, логотипы, болид, прогресс
-  data/         бренды, страны, SVG-пути логотипов
-  lib/          звук, конфетти, утилиты
-  pages/        главная, гараж, викторина, пит-стоп, коллекция
-  state/        прогресс и localStorage
-  styles/       глобальные стили и SCSS-миксины
+https://<username>.github.io/react-ts-car-brands/
 ```
 
-## Доступность
+> Если репозиторий называется `<username>.github.io`, базовый путь должен быть `/`. В этом случае измените строку с `VITE_BASE` в workflow.
 
-- Навигация доступна с клавиатуры, есть skip-link.
-- Модальные окна закрываются по `Escape`, фокус удерживается внутри.
-- Учитывается `prefers-reduced-motion`: анимации и звук можно отключить.
+### Обновление сайта
+
+Каждый push в ветку `main` автоматически запускает сборку и публикацию. Ничего вручную копировать в `gh-pages` не нужно.
+
+---
+
+## ✅ Качество и проверки
+
+| Проверка | Результат |
+|:---|:---:|
+| `npm run build` | ✅ |
+| `npm run typecheck` | ✅ |
+| Адаптивность 320 / 390 / 768 / 1024 / 1440 / 1920 px | ✅ нет горизонтального overflow |
+| Прямые ссылки и GitHub Pages base path | ✅ |
+| Навигация, модальные окна и сохранение прогресса | ✅ |
+| Консольные ошибки в браузере | ✅ не обнаружены |
+
+### Особенности окружения
+
+- Синтез речи зависит от голосов, установленных в браузере и ОС.
+- Прогресс хранится локально: очистка данных сайта сбросит коллекцию.
+- Для звука требуется пользовательское действие — браузеры блокируют автозапуск аудио.
+
+---
+
+## ♿ Доступность
+
+- Семантическая разметка и landmark-навигация.
+- Skip-link для перехода к основному содержимому.
+- Кнопки и ссылки доступны с клавиатуры.
+- Модальные окна: `role="dialog"`, `aria-modal`, закрытие по `Escape`, focus trap.
+- Учитывается `prefers-reduced-motion`.
+- Контрастная тёмная тема и крупные интерактивные элементы для детей.
+
+---
+
+## 🙌 Благодарности
+
+- [React](https://react.dev/) и [Vite](https://vite.dev/) — основа приложения.
+- [React Router](https://reactrouter.com/) — декларативная маршрутизация.
+- [Framer Motion](https://motion.dev/) — анимации.
+- [Lucide](https://lucide.dev/) — иконки.
+- [Simple Icons](https://simpleicons.org/) — SVG-пути логотипов.
+- [Fontsource](https://fontsource.org/) — локальные шрифты Unbounded и Manrope.
+- [Canvas Confetti](https://github.com/catdad/canvas-confetti) — конфетти.
+
+---
+
+<div align="center">
+
+### 🏁 Поехали!
+
+Сделано с ❤️ для маленьких любителей автомобилей.
+
+**TURBO GARAGE · ТУРБО ГАРАЖ · 2026**
+
+</div>
