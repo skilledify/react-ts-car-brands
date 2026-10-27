@@ -1,0 +1,48 @@
+@mixin glass($blur: 18px) {
+  background: linear-gradient(155deg, rgba(18, 32, 37, 0.78) 0%, rgba(7, 13, 16, 0.9) 100%);
+  border: 1px solid var(--line);
+  backdrop-filter: blur($blur);
+  -webkit-backdrop-filter: blur($blur);
+}
+
+@mixin eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+}
+
+@mixin display($size: clamp(2rem, 5vw, 4.6rem), $weight: 700) {
+  font-family: var(--font-display);
+  font-size: $size;
+  font-weight: $weight;
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+@mixin focus-ring {
+  &:focus-visible {
+    outline: 2px solid var(--teal-bright);
+    outline-offset: 3px;
+  }
+}
+
+@mixin below($bp) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}

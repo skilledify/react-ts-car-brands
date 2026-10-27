@@ -1,0 +1,178 @@
+@use '../styles/mixins' as *;
+
+.stage {
+  position: relative;
+  display: flex;
+  min-height: 440px;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0 34px;
+  isolation: isolate;
+}
+
+.carButton {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  padding: 0;
+  cursor: pointer;
+  filter: drop-shadow(0 24px 30px rgba(0, 0, 0, 0.35));
+  @include focus-ring;
+}
+
+.car {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.rim {
+  animation: spin 1.7s linear infinite;
+}
+
+.rimFront {
+  animation: spin 1.25s linear infinite;
+}
+
+.ring,
+.ringInner {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgba(46, 242, 214, 0.13);
+  border-radius: 50%;
+  transform: translate(-50%, -48%);
+  pointer-events: none;
+}
+
+.ring {
+  width: min(610px, 92%);
+  aspect-ratio: 1;
+  box-shadow:
+    0 0 90px rgba(0, 210, 190, 0.06),
+    inset 0 0 90px rgba(0, 210, 190, 0.04);
+}
+
+.ringInner {
+  width: min(440px, 68%);
+  aspect-ratio: 1;
+  border-style: dashed;
+  opacity: 0.65;
+  animation: spin 46s linear infinite reverse;
+}
+
+.speedField {
+  position: absolute;
+  inset: 12% 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+  mask-image: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
+}
+
+.speedField span {
+  position: absolute;
+  left: 25%;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(46, 242, 214, 0.5), transparent);
+  animation: speed-streak 3.2s linear infinite;
+}
+
+.streakOne {
+  top: 26%;
+  width: 190px;
+  animation-delay: 0.2s !important;
+}
+
+.streakTwo {
+  top: 43%;
+  width: 110px;
+  animation-delay: 1.8s !important;
+  background: linear-gradient(90deg, transparent, rgba(201, 209, 211, 0.35), transparent) !important;
+}
+
+.streakThree {
+  top: 68%;
+  width: 240px;
+  animation-delay: 0.9s !important;
+}
+
+.streakFour {
+  top: 82%;
+  width: 90px;
+  animation-delay: 2.4s !important;
+  background: linear-gradient(90deg, transparent, rgba(201, 209, 211, 0.3), transparent) !important;
+}
+
+.vroom {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  z-index: 5;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 2.7rem);
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -0.06em;
+  color: var(--teal-bright);
+  text-shadow: 0 0 30px rgba(46, 242, 214, 0.55);
+  pointer-events: none;
+}
+
+.hintPill {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(5, 12, 14, 0.65);
+  color: var(--muted);
+  font-size: 0.65rem;
+  font-weight: 750;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  backdrop-filter: blur(10px);
+}
+
+.pulseDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal-bright);
+  box-shadow: 0 0 10px rgba(46, 242, 214, 0.8);
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+@include below(900px) {
+  .stage {
+    min-height: 330px;
+    padding-top: 0;
+  }
+}
+
+@include below(520px) {
+  .stage {
+    min-height: 250px;
+    padding-bottom: 30px;
+  }
+
+  .hintPill {
+    bottom: 0;
+    font-size: 0.6rem;
+    padding: 7px 12px;
+  }
+
+  .vroom {
+    top: 0;
+    right: 4%;
+  }
+}

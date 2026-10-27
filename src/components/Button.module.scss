@@ -1,0 +1,154 @@
+@use '../styles/mixins' as *;
+
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-family: var(--font-body);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  isolation: isolate;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.25s ease;
+  @include focus-ring;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+  }
+}
+
+.label {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  flex: 0 0 auto;
+
+  svg {
+    width: 1.15em;
+    height: 1.15em;
+    stroke-width: 2.4;
+  }
+}
+
+.shine {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset-block: -40%;
+    left: 0;
+    width: 34%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: translateX(-120%) skewX(-18deg);
+    opacity: 0;
+  }
+}
+
+@include hover {
+  .button:hover .shine::after {
+    animation: shimmer 0.7s ease;
+    opacity: 1;
+  }
+}
+
+.primary {
+  background: linear-gradient(135deg, #6bffea 0%, var(--teal-bright) 24%, var(--teal) 62%, #00a896 100%);
+  color: #031311;
+  box-shadow:
+    0 12px 34px rgba(0, 210, 190, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+
+  @include hover {
+    &:hover {
+      box-shadow:
+        0 16px 46px rgba(0, 210, 190, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.secondary {
+  background: rgba(17, 32, 37, 0.72);
+  border-color: var(--line-strong);
+  color: var(--chalk);
+  backdrop-filter: blur(12px);
+
+  @include hover {
+    &:hover {
+      border-color: rgba(46, 242, 214, 0.45);
+      background: rgba(23, 43, 48, 0.82);
+      color: var(--teal-bright);
+    }
+  }
+}
+
+.ghost {
+  background: transparent;
+  color: var(--silver);
+  border-color: transparent;
+
+  @include hover {
+    &:hover {
+      color: var(--teal-bright);
+      background: var(--teal-soft);
+    }
+  }
+}
+
+.danger {
+  background: rgba(255, 107, 107, 0.12);
+  border-color: rgba(255, 107, 107, 0.3);
+  color: #ffbaba;
+
+  @include hover {
+    &:hover {
+      background: rgba(255, 107, 107, 0.2);
+    }
+  }
+}
+
+.sm {
+  min-height: 40px;
+  padding: 9px 18px;
+  font-size: 0.84rem;
+}
+
+.md {
+  min-height: 50px;
+  padding: 13px 24px;
+  font-size: 0.95rem;
+}
+
+.lg {
+  min-height: 60px;
+  padding: 17px 32px;
+  font-size: 1.05rem;
+}
+
+.fullWidth {
+  width: 100%;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "turbo-garage",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "TURBO GARAGE — детская автоакадемия логотипов автомобильных брендов",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource/unbounded": "^5.3.0",
+    "canvas-confetti": "^1.9.4",
+    "framer-motion": "^14.6.0",
+    "lucide-react": "^1.61.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "sass": "^1.106.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.5"
+  }
+}

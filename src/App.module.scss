@@ -1,0 +1,41 @@
+@use './styles/mixins' as *;
+
+.app {
+  position: relative;
+  display: flex;
+  min-height: 100svh;
+  flex-direction: column;
+  isolation: isolate;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  outline: none;
+}
+
+.skipLink {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 200;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--teal);
+  color: #031311;
+  font-size: 0.8rem;
+  font-weight: 800;
+  transform: translateY(-160%);
+  transition: transform 0.2s ease;
+
+  &:focus {
+    transform: translateY(0);
+  }
+}
+
+@include below(900px) {
+  .app {
+    padding-bottom: 0;
+  }
+}

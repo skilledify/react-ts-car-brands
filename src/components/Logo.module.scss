@@ -1,0 +1,108 @@
+@use '../styles/mixins' as *;
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0;
+  text-align: left;
+  @include focus-ring;
+}
+
+.mark {
+  position: relative;
+  display: grid;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 6px 18px rgba(0, 210, 190, 0.28));
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.markBg {
+  fill: #081416;
+  stroke: rgba(46, 242, 214, 0.4);
+  stroke-width: 1;
+}
+
+.markRing {
+  fill: none;
+  stroke: rgba(201, 209, 211, 0.42);
+  stroke-width: 1;
+}
+
+.markStar {
+  fill: none;
+  stroke: url(#logo-teal);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+
+.markSpeed {
+  stroke: var(--teal);
+  stroke-width: 2;
+  stroke-linecap: round;
+  opacity: 0.65;
+}
+
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  color: var(--chalk);
+  line-height: 1.1;
+  white-space: nowrap;
+
+  span {
+    color: var(--teal-bright);
+    margin-left: 4px;
+  }
+}
+
+.sub {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.compact {
+  .mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .name {
+    font-size: 0.82rem;
+  }
+}
+
+@include below(390px) {
+  .mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .name {
+    font-size: 0.8rem;
+  }
+
+  .sub {
+    font-size: 0.52rem;
+    letter-spacing: 0.12em;
+  }
+}
